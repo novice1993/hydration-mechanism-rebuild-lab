@@ -4,13 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev:client": "vite",
-    "dev:server": "nodemon --exec ts-node --project tsconfig.server.json server/index.ts",
-    "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
     "build": "vite build",
-    "start:server": "ts-node --project tsconfig.server.json server/index.ts",
-    "start": "npm run start:server",
-    "preview": "vite preview"
+    "dev:server": "nodemon",
+    "dev": "concurrently \"npm run build\" \"npm run dev:server\""
   },
   "keywords": [],
   "author": "",

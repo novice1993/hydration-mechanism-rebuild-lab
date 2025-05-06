@@ -23,13 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
-  console.log("Hydration 시작");
-
   // hydrateRoot 사용하여 서버 렌더링된 HTML에 이벤트 핸들러 연결
-  const root = hydrateRoot(rootElement, <App />);
-
+  console.log("Hydration 시작");
+  hydrateRoot(rootElement, <App />);
   console.log("Hydration 완료");
-
-  // 개발자 도구 콘솔에서 접근할 수 있도록 전역 변수로 할당
-  (window as any).__hydrationRoot = root;
 });
