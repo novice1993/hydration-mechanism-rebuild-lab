@@ -5,7 +5,7 @@ import { App } from "../src/App";
 import * as React from "react";
 
 const app = express();
-const PORT = 3000;
+const PORT = 4000;
 
 app.use("/dist", express.static(path.resolve(__dirname, "../dist")));
 
