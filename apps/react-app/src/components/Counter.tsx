@@ -15,7 +15,7 @@ export function Counter({ initialCount }: CounterProps) {
   }, []);
 
   return (
-    <div>
+    <div id="ssr-counter">
       <p>클라이언트 컴포넌트 카운터</p>
       <p className="counter-value">{count}</p>
       <div style={{ display: "flex", gap: "0.5rem" }}>
